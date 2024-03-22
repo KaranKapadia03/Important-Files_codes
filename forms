@@ -1,0 +1,29 @@
+-------------------------Django Form------------------------------------------
+Bound---->has data
+unbound--->doesn't have data
+
+-------create
+Syntax-
+form django import forms
+
+class FormClassName(forms.Form):
+	label=forms.fieldType()
+	label=forms.fieldType(label="display_label")
+	
+______________________Form rendering Option______________________
+{{form}}
+{{form.as_table}}
+{{form.as_p}}
+{{form.as_ul}}
+{{form.name_of_field}}
+________________________________________________________
+------------------- IN views--------------
+def regiter(request):
+	q=FormClassName(){make object}
+	(48)
+
+
+
+
+
+	

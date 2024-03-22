@@ -1,0 +1,44 @@
+>>>>>>>>Show Table Data to User
+all()-It returns a copy of current Queryset or Queryset Subclass
+
+syntax-
+ 
+	ModelClassName.objects.all()
+	ModelClassName.objects.all(pk=2)
+---------------------------------------
+a=student.objects.all()
+context['stu']=a
+
+{% if stu%}
+Show data
+{{stu}} 
+{%else%}
+no data
+--------------------------------------------
+-----------Creating superuser------------------
+Admin:
+python manage.py createsuperuser
+
+__str()__Method:
+
+def __str__(self):
+	return self.{fieldName}
+	
+__________________Model Admin Class:_____________________________
+
+
+Syntax:
+Class ModelAdminClassName(admin.ModelAdmin):
+	list_display=('fieldname1','fieldname2')
+
+admin.site.register(ModelClassName,ModelAdminClassName)
+
+___________________Register Model by decorator_______________________
+
+@admin.register(ModelClassName)
+class StudentAdmin(admin.ModelAdmin):
+	list_display=('id','studid')
+
+
+ 
+ 

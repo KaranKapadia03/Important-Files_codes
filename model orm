@@ -1,0 +1,46 @@
+>>>>>>>>>>Object Relation Mapper
+
+Application intracts with database
+class ----->sql query ----->table
+
+>>>>>>>>queryset
+
+queryset allow you to read the data from the database
+list containing all the objects we have created using django model
+
+>>>>>>>>>Model
+django.db.models.Model(parent model)
+Syntax:
+	class ClassName(models.Model):
+	
+		field_name=modles.FieldType(arg,options)
+{backend save as AppName_ClassName}		
+python manage.py make migrations
+{class to sql query}
+python manage.py migrate 
+{sql query exicute}
+show migrations--->status of igrations
+sqlmigrate------>sql statement for a migratinon
+
+>>>>>>>>>>>>Built-in Field Options
+null-->true or false
+blank-->true or flase
+default -->'name'
+verbose_name
+primary_key=True{unique=true,null=false}
+unique
+
+>>>>>>>>>>>>>Built-in -field type
+IntegerField
+BigIntegerField
+AutoField
+FloatField
+Charfield
+TextField
+BooleanField
+Emialfield
+URLField
+BinaryField(images)
+
+		
+

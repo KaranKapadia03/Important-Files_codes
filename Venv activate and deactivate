@@ -1,0 +1,37 @@
+>>>>>>>>>Virtual env
+
+_____INSTALL THE 3 rd party package_____ 
+Step 1:pip install virtualenvwrapper-win
+_________create virtual environment_______
+Step 2:mkvirtualenv {envname}
+__________Activate VE________________
+Step3:work on {envname}
+
+>>>>>>>>>>Create a Django project
+
+Step 1:django-admin startproject {projectname}
+[outer project folder and inner project folder]
+
+>>>>>>>>>>>>>>>To runserver you need to get to the inner project folder and run
+Run:python manage.py runserver
+
+
+
+>>>>>>>>>>>Uninstall django from venv
+
+_______activate virtual env_
+Step 1:workon {envname}
+________uninstall django____
+Step 2:pip uninstall django
+________remove virtual env_____
+Step 3:rmvirtualenv {envname}(you need to get out of venv to delete it )
+________uninstall virtual env wrapper______-
+Step 4:pip uninstall virtualenvwrapper-win
+
+
+>>>>>>>>>>>>>>>>>>>>>>>Global django install
+(needs python)
+pip install django
+pip uninstall django
+django-admin --version 
+

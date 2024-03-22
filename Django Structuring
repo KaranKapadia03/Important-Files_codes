@@ -1,0 +1,40 @@
+>>>>>>>>>>>>>>>>Django structure
+{project name}>>>{poject name}>>>__init__.py,asgi.py,srttings.py,url.py,wsgi.py
+                ,{manage.py}
+                
+ _________The file underwhich  manage.py is found is called root directory or outer project file_________________
+ 
+ 
+ 
+ >>>>>>>>>>>>>>>>>>>files understanding
+ __init__.py   >>>>makes the directory a python package
+ wsgi.py       
+ asgi.py
+ settings.py
+ url.py
+ manage.py
+ 
+ >>>>>>>>>if you run a server 2 files are made 
+ 
+ db.sqlite3
+ ___pycahe__ creates a cache	
+ 
+ >>>>>>>settings.py
+ 
+1)BASE_DIR--> is a variabe which contains abspath pf base directory/project folder
+2)SECRET_KEY-->This adds a seret key to every django project.
+3)DEBUG=TRUE/FALSE ---->
+	DEVELOPENT -->TRUE,DEPLOYMENT-->Flase{allow host }
+4)ALLOWED_HOST=[*]
+	A list of strings representing the host/domain
+5)INSTALLED_APPS=[]
+	WRITE ALL THE APP NAMES {NO DUPLICATES}
+6)TEMPLATES=[]
+
+
+
+>>>>>>>HOW TO RUN SERVER
+python manage.py runserver {portnumber eg5555}
+python manage.py runserver
+
+
